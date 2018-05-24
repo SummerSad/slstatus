@@ -1,0 +1,12 @@
+--- a/config.def.h	2018-05-24 18:02:37.905002277 +0700
++++ b/config.def.h	2018-05-24 19:26:13.168884618 +0700
+@@ -62,5 +62,8 @@
+  */
+ static const struct arg args[] = {
+ 	/* function format          argument */
+-	{ datetime, "%s",           "%F %T" },
++	{ run_command, "Volume %s ", "amixer get Master | tail -n1 | awk '{ print $5 }' | tr -d []" },
++	{ battery_state, "Battery %s ", "BAT0" },
++	{ battery_perc, "%3s%% ",    "BAT0" },
++	{ datetime, "%s",           "%F %R" },
+ };

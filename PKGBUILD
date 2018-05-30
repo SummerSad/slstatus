@@ -14,7 +14,7 @@ source=("git+https://git.suckless.org/${pkgname%-git}"
 	"${_patches[@]}"
 )
 sha256sums=('SKIP'
-            '182c3d5239fd1060dc363e43b10b3bbd80075062a9a71f4a3ad8c64dbcf1286f')
+            '099f512c17363776d7a4dc45927bfcc82e4d6fd3013cb9f8edf3d9804cad912e')
 
 pkgver() {
 	cd "${pkgname%-git}"

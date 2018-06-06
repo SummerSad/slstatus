@@ -1,7 +1,7 @@
 # Maintainer: SummerSad <hauvipapro@gmail.com>
 
 pkgname=slstatus-git
-pkgver=r517.8c8091f
+pkgver=r520.1452a44
 pkgrel=1
 pkgdesc='A status monitor for window managers.'
 arch=('x86_64')

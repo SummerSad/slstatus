@@ -1,5 +1,5 @@
---- a/config.def.h	2018-06-06 13:16:00.310419357 +0700
-+++ b/config.def.h	2018-06-06 13:17:14.172029266 +0700
+--- a/config.def.h	2018-07-10 08:56:01.583972119 +0700
++++ b/config.def.h	2018-07-10 08:57:58.374671909 +0700
 @@ -61,5 +61,8 @@
   */
  static const struct arg args[] = {
@@ -7,6 +7,6 @@
 -	{ datetime, "%s",           "%F %T" },
 +	{ run_command, "Volume %s ", "amixer get Master | tail -n1 | awk '{ print $5 }' | tr -d []" },
 +	{ battery_state, "Battery %s ", "BAT0" },
-+	{ battery_perc, "%3s%% ",    "BAT0" },
-+	{ datetime, "%s",           "%F %R" },
++	{ battery_perc, "%3s%% ", "BAT0" },
++	{ datetime, "%s", "%F %R" },
  };

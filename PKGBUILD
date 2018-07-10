@@ -1,7 +1,7 @@
 # Maintainer: SummerSad <hauvipapro@gmail.com>
 
 pkgname=slstatus-git
-pkgver=r520.1452a44
+pkgver=r540.dd7f189
 pkgrel=1
 pkgdesc='A status monitor for window managers.'
 arch=('x86_64')
@@ -14,7 +14,7 @@ source=("git+https://git.suckless.org/${pkgname%-git}"
 	"${_patches[@]}"
 )
 sha256sums=('SKIP'
-            '099f512c17363776d7a4dc45927bfcc82e4d6fd3013cb9f8edf3d9804cad912e')
+            '94eaa0c1d58e2024b5fc3b032ed643a1b8de934271ba016cc76cc90928d722ee')
 
 pkgver() {
 	cd "${pkgname%-git}"
